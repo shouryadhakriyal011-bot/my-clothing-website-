@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>my Clothing Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+header{
+background:black;
+color:white;
+padding:15px;
+text-align:center;
+font-size:22px;
+}
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:15px;
+}
+.card{
+background:white;
+border-radius:10px;
+padding:10px;
+text-align:center;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+.card img{
+width:100%;
+border-radius:10px;p
+}
+button{
+background:#ff0066;
+color:white;
+border:none;
+padding:10px;
+width:100%;<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>my Clothing Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5f5;
+}
+header{
+background:black;
+color:white;
+padding:15px;
+text-align:center;
+font-size:22px;
+}
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:15px;
+}
+.card{
+background:white;
+border-radius:10px;
+padding:10px;
+text-align:center;
+box-shadow:0 0 5px rgba(0,0,0,0.2);
+}
+.card img{
+width:100%;
+border-radius:10px;
+}
+button{
+background:#ff0066;
+<header>🛍️ My Clothing Store</header>
+
+<div class="products">
+
+<div class="card">
+<img src="https://i.postimg.cc/hvnpzgFs/1766650916346.png">
+<h3>Trouser</h3>
+<p>₹459</p>
+<button onclick="order('trouser,'499')">Order on Instagram</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/9XnRZpE.jpg">
+<h3>Hoodie</h3>
+<p>₹999</p>
+<button onclick="order('Hoodie','999')">Order on Instagram</button>
+</div>
+
+<div class="card">
+<img src="https://i.imgur.com/d8zY5hT.jpg">
+<h3>Jeans</h3>
+<p>₹1199</p>
+<button onclick="order('Jeans','1199')">Order on Instagram</button>
+</div>
+
+</div>
+
+<footer>
+© 2025 My Clothing Store
+</footer>
+
+<script>
+function order(product, price){
+let instaUser = "https://www.instagram.com/_.sho.urya05?igsh=ZDYwYjA3cHB4Y29p";
+let msg = `Hello, I want to order ${product} worth ₹${price}`;
+let url = `https://ig.me/m/${instaUser}?text=${encodeURIComponent(msg)}`;
+window.open(url,'_blank');
+}
+</script>
+
+</body>
+</html>
